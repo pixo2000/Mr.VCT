@@ -50,7 +50,7 @@ def example_filter_matches_by_team():
     filtered_matches = [
         match for match in all_matches
         if team_name.lower() in match.get('team1', '').lower() or
-           team_name.lower() in match.get('team2', '').lower()
+        team_name.lower() in match.get('team2', '').lower()
     ]
     
     print(f"Matches featuring {team_name}:")

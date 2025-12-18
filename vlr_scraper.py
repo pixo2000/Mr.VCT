@@ -5,7 +5,7 @@ VLR.gg Scraper - Fetch latest matches and events from vlr.gg
 import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict, Optional
-from datetime import datetime
+
 
 
 class VLRScraper:
