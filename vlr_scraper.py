@@ -154,9 +154,9 @@ class VLRScraper:
             if location_elem:
                 location_icon = location_elem.find('i', class_='fa-location-dot')
                 if location_icon and location_icon.parent:
-                    event_info['location'] = location_icon.parent.find('div', class_='event-item-desc-item-value')
-                    if event_info['location']:
-                        event_info['location'] = event_info['location'].get_text(strip=True)
+                    location_value = location_icon.parent.find('div', class_='event-item-desc-item-value')
+                    if location_value:
+                        event_info['location'] = location_value.get_text(strip=True)
             
             # Get event status
             status_elem = card.find('div', class_='event-item-status')
